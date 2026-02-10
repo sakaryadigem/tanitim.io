@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakarya Dijital Gençlik Merkezi | Geleceği Kodluyoruz</title>
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Sakarya Dijital Gençlik Merkezi - Gençler için kodlama, tasarım ve dijital beceriler merkezi.">
+    <!-- Google Fonts: Inter & Outfit -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Outfit:wght@400;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <a href="#" class="logo">
+				<img src="./images/digemlogo.png" width="200px" title="Sakarya Dijital Gençlik Merkezi">
+            </a>
+            <ul class="nav-links" id="nav-links">
+				<li><span class="logo-accent">Sakarya</span> Dijital Gençlik</li>
+                <li><a href="#hero">Ana Sayfa</a></li>
+                <li><a href="#about">Biz Kimiz</a></li>
+                <li><a href="#stats">İstatistikler</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact" class="btn btn-primary">Katıl</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="slider-container" id="hero-slider">
+            <!-- Slide 1 -->
+            <div class="slide active"
+                style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/photo-1517245386807-bb43f82c33c4.avif?auto=format&fit=crop&q=80&w=1440'); background-size: cover; background-position: center;">
+                <div class="container slide-content">
+                    <h1>Geleceği <span class="text-orange">Dijitalde</span> İnşa Edin</h1>
+                    <p>Sakarya Dijital Gençlik Merkezi'nde yeni nesil teknolojileri öğrenin, projeler geliştirin ve
+                        kariyerinize yön verin.</p>
+                    <div class="hero-btns">
+                        <a href="#about" class="btn btn-primary">Keşfet</a>
+                        <a href="#contact" class="btn btn-outline">İletişime Geç</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide"
+                style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/photo-1581091226825-a6a2a5aee158.avif?auto=format&fit=crop&q=80&w=1440'); background-size: cover; background-position: center;">
+                <div class="container slide-content">
+                    <h1>Sınırları <span class="text-orange">Kodlayarak</span> Aşın</h1>
+                    <p>Yazılım, tasarım ve inovasyonun merkezi. Senin yeteneğin, bizim geleceğimiz.</p>
+                    <div class="hero-btns">
+                        <a href="#stats" class="btn btn-primary">İncele</a>
+                        <a href="#gallery" class="btn btn-outline">Galeriyi Gör</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide"
+                style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('./images/photo-1451187580459-43490279c0fa.avif?auto=format&fit=crop&q=80&w=1440'); background-size: cover; background-position: center;">
+                <div class="container slide-content">
+                    <h1>Üreten <span class="text-orange">Gençlik</span></h1>
+                    <p>VR eğitimlerinden 3D modellemeye kadar teknolojinin her alanında seninleyiz.</p>
+                    <div class="hero-btns">
+                        <a href="#contact" class="btn btn-primary">Hemen Kaydol</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider-nav">
+            <button class="prev-btn">&lt;</button>
+            <button class="next-btn">&gt;</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container grid">
+            <div class="about-text">
+                <h2 class="section-title">Dijital Gençlik <span class="text-orange">Vizyonu</span></h2>
+                <p>Sakarya Büyükşehir Belediyesi tarafından hayata geçirilen Dijital Gençlik Merkezi, gençlerin
+                    teknoloji dünyasında söz sahibi olmalarını sağlamak amacıyla kurulmuştur.</p>
+                <p>Amacımız, teorik bilgiyi pratiğe dönüştüren, üreten ve dünya standartlarında projeler geliştiren bir
+                    gençlik topluluğu oluşturmaktır.</p>
+            </div>
+            <div class="about-image">
+                <div class="img-wrapper">
+                    <div class="placeholder-img"><img src="./images/ogretmen.png" width="500px" title="Sunum Yapan Öğretmen"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section id="stats" class="stats section-padding bg-dark">
+        <div class="container grid-4">
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="1500">0</h3>
+                <p class="stat-label">Aktif Öğrenci</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="45">0</h3>
+                <p class="stat-label">Tamamlanan Proje</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="120">0</h3>
+                <p class="stat-label">Eğitim Programı</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="stat-number" data-target="12">0</h3>
+                <p class="stat-label">Teknoloji Atölyesi</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section-padding">
+        <div class="container text-center">
+            <h2 class="section-title">Proje <span class="text-orange">Galerisi</span></h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="placeholder-img"><img src="./images/vr.png" width="300px" title="VR Gözlük Kullanan Öğrenci"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img"><img src="./images/3D.png" width="300px" title="3D Yazıcı Kullanan Öğrenci"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img"><img src="./images/pc.png" width="300px" title="Bilgisayar Kullanan Öğrenci"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img"><img src="./images/sunum.png" width="300px" title="Sunum Yapan Öğrenci"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img"><img src="./images/drone.png" width="300px" title="Drone Kullanan Öğrenci"></div>
+                </div>
+                <div class="gallery-item">
+                    <div class="placeholder-img"><img src="./images/toplanti.png" width="300px" title="Toplantı Yapan Öğrenciler"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding">
+        <div class="container">
+            <h2 class="section-title text-center">Bize <span class="text-orange">Ulaşın</span></h2>
+            <div class="grid contact-wrapper">
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" placeholder="Adınız Soyadınız" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="E-posta Adresiniz" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Mesajınız" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Mesaj Gönder</button>
+                    </form>
+                </div>
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <p><img src="./images/harita.png" width="600px" title="Sakarya Dijital Gençlik Merkezi"></p>
+                        <p style="font-size: 0.9rem; margin-top: 10px;">Sakarya Büyükşehir Belediyesi</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container grid-3">
+            <div class="footer-info">
+                <h3>Sakarya Dijital Gençlik</h3>
+                <p>Geleceğin teknolojilerini bugünden öğrenen, üreten ve paylaşan gençlerin buluşma noktası.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Hızlı Linkler</h4>
+                <ul>
+                    <li><a href="#hero">Ana Sayfa</a></li>
+                    <li><a href="#about">Biz Kimiz</a></li>
+                    <li><a href="#stats">İstatistikler</a></li>
+                    <li><a href="#gallery">Galeri</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>İletişim</h4>
+                <p>Sakarya Dijital Gençlik Merkezi</p>
+                <p>OFİS SANAT MERKEZİ</p>
+                <p>Sakarya, Türkiye</p>
+                <p>Email: sakaryadigem@gmail.com</p>
+                <div class="social-links">
+                    <!-- Social icons -->
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sakarya Dijital Gençlik Merkezi. Tüm Hakları Saklıdır.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
