@@ -98,8 +98,10 @@
             </div>
             <div class="about-image">
                 <div class="img-wrapper">
-                    <div class="placeholder-img"><img src="./images/ogretmen.png" width="500px" title="Sunum Yapan Öğretmen"></div>
+                <div class="gallery-item">
+                    <div class="placeholder-img"><img src="./images/ogretmen.png" width="500px" title="Sunum Yapan Öğretmen" onclick="openModal(this)" style="cursor:pointer;"></div>
                 </div>
+            </div>
             </div>
         </div>
     </section>
@@ -132,25 +134,32 @@
             <h2 class="section-title">Proje <span class="text-orange">Galerisi</span></h2>
             <div class="gallery-grid">
                 <div class="gallery-item">
-                    <div class="placeholder-img"><img src="./images/vr.png" width="300px" title="VR Gözlük Kullanan Öğrenci"></div>
+                    <div class="placeholder-img"><img src="./images/vr.png" width="300px" title="VR Gözlük Kullanan Öğrenci" onclick="openModal(this)" style="cursor:pointer;"></div>
                 </div>
                 <div class="gallery-item">
-                    <div class="placeholder-img"><img src="./images/3D.png" width="300px" title="3D Yazıcı Kullanan Öğrenci"></div>
+                    <div class="placeholder-img"><img src="./images/3D.png" width="300px" title="3D Yazıcı Kullanan Öğrenci" onclick="openModal(this)" style="cursor:pointer;"></div>
                 </div>
                 <div class="gallery-item">
-                    <div class="placeholder-img"><img src="./images/pc.png" width="300px" title="Bilgisayar Kullanan Öğrenci"></div>
+                    <div class="placeholder-img"><img src="./images/pc.png" width="300px" title="Bilgisayar Kullanan Öğrenci" onclick="openModal(this)" style="cursor:pointer;"></div>
                 </div>
                 <div class="gallery-item">
-                    <div class="placeholder-img"><img src="./images/sunum.png" width="300px" title="Sunum Yapan Öğrenci"></div>
+                    <div class="placeholder-img"><img src="./images/sunum.png" width="300px" title="Sunum Yapan Öğrenci" onclick="openModal(this)" style="cursor:pointer;"></div>
                 </div>
                 <div class="gallery-item">
-                    <div class="placeholder-img"><img src="./images/drone.png" width="300px" title="Drone Kullanan Öğrenci"></div>
+                    <div class="placeholder-img"><img src="./images/drone.png" width="300px" title="Drone Kullanan Öğrenci" onclick="openModal(this)" style="cursor:pointer;"></div>
                 </div>
                 <div class="gallery-item">
-                    <div class="placeholder-img"><img src="./images/toplanti.png" width="300px" title="Toplantı Yapan Öğrenciler"></div>
+                    <div class="placeholder-img"><img src="./images/toplanti.png" width="300px" title="Toplantı Yapan Öğrenciler" onclick="openModal(this)" style="cursor:pointer;"></div>
                 </div>
             </div>
         </div>
+		
+		<!-- Popup Modal -->
+		<div id="imageModal" class="modal" onclick="closeModal()">
+		  <span class="close" onclick="closeModal()">&times;</span>
+		  <img class="modal-content" id="modalImage">
+		  <div id="caption"></div>
+		</div>
     </section>
 
     <!-- Contact Section -->
@@ -174,7 +183,9 @@
                 </div>
                 <div class="contact-map">
                     <div class="map-placeholder">
-                        <p><img src="./images/harita.png" width="600px" title="Sakarya Dijital Gençlik Merkezi"></p>
+                        <p><a href="https://maps.app.goo.gl/7eSWKNa1eyDfk7766" target="_blank">
+						<img src="./images/harita.png" width="600px" title="Sakarya Dijital Gençlik Merkezi"></a>
+						</p>
                         <p style="font-size: 0.9rem; margin-top: 10px;">Sakarya Büyükşehir Belediyesi</p>
                     </div>
                 </div>
@@ -216,6 +227,7 @@
 
     <!-- JS -->
     <script src="script.js"></script>
+    <script src="gallery.js"></script>
 </body>
 
 </html>
